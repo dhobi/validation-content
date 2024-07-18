@@ -538,6 +538,19 @@
 				</desc>
 				<type name="Boolean"/>
 			</property>
+			<property name="customElements" default="[]">
+				<desc>
+				    By default, only the following elements are validatable input, select, textarea, [contenteditable]
+					Register additional elements. Main use case is for validating web components.
+					<p><strong>Example</strong>: Register &lt;my-custom-element&gt; to be validatable as well.</p>
+					<pre><code>
+					$("#myform").validate({
+						customElements: ["my-custom-element"]
+					});
+					</code></pre>
+				</desc>
+				<type name="Array"/>
+			</property>
 		</argument>
 	</signature>
 	<category slug="plugin"/>
