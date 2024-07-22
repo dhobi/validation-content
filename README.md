@@ -33,3 +33,27 @@ In this repo:
 ### Deploy
 
 `grunt deploy`
+
+## Building with Dev Containers
+The Dev Container is a DIND (docker-in-docker) which comes with all the requirements pre-installed. Start the WordPress instance with: 
+
+`docker-compose up` and visit `http://localhost:8080`
+
+### Requirements
+* Open this repository in Visual Studio Code with Dev Containers extension installed (https://code.visualstudio.com/docs/devcontainers/containers)
+  
+### Installation
+* Setup WordPress with:
+  * **Site Title**: Form validation with jQuery
+  * **Username**: admin
+  * **Password**: secret
+  * *tick the checkbox 'Confirm use of weak password'*
+  * **Your Email**: &lt;enter a valid email address&gt;
+* Activate theme 'jQuery Validation Plugin WordPress Theme' (Appeareance)
+* Activate plugin 'Gilded WordPress XML-RPC extensions' (Plugins)
+* Activate plugin 'jQuery Static Index' (Plugins)
+
+
+### Deploy
+
+`grunt deploy`
